@@ -16,13 +16,22 @@
 
     <div>
         <p>3.Event Binding</p>
-        <select >
+        <select (change)="onChange()">
             <option value="skills">Skills</option>
             <option value="skills">Angular</option>
             <option value="skills">React</option>
             <option value="skills">SpringBoot</option>
         </select>
         <button (click)="saveData()" style="margin-left: 10px;">Save</button>
+        
+        
+    </div>
+
+    <div>
+        <p>Two way data binding</p>
+        <input type="text" [(ngModel)]="random">
+        <p>{{random}}</p>
+        
         
         
     </div>
