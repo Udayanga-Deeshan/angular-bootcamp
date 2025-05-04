@@ -1,0 +1,23 @@
+<div class="row text-center">
+    <div class="col-12 m-3">
+        <h4>Example of ngSwitch</h4>
+    </div>
+</div>
+
+
+<div class="row text-center">
+    
+
+    <div class="col-12 m-3">
+        <button class="btn btn-primary m-3"(click)="checkResult(1)">Angular</button>
+        <button class="btn btn-warning m-3"(click)="checkResult(2)">springboot</button>
+        <button class="btn btn-success m-3"(click)="checkResult(3)">React</button>
+    </div>
+
+    <div [ngSwitch]="grade">
+        <h4 *ngSwitchCase=1>Congradulations on your achievement 1st class</h4>
+        <h4 *ngSwitchCase="2">Congradulations on your achievement 2st class</h4>
+        <h4 *ngSwitchCase="3">Congradulations on your achievement General class</h4>
+        <h4 *ngSwitchDefault>check your Grades...</h4>
+    </div>
+</div>
