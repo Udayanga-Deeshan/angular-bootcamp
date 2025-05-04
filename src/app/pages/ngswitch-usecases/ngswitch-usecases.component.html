@@ -14,10 +14,20 @@
         <button class="btn btn-success m-3"(click)="checkResult(3)">React</button>
     </div>
 
-    <div [ngSwitch]="grade">
+    <!-- <div [ngSwitch]="grade">
         <h4 *ngSwitchCase=1>Congradulations on your achievement 1st class</h4>
         <h4 *ngSwitchCase="2">Congradulations on your achievement 2st class</h4>
         <h4 *ngSwitchCase="3">Congradulations on your achievement General class</h4>
         <h4 *ngSwitchDefault>check your Grades...</h4>
+    </div> -->
+
+    <div class="m-3">
+        @switch (grade) {
+            @case (1) {Congradulations on your achievement 1st class}
+            @case (2) {Congradulations on your achievement 2st class}
+            @case (3) {Congradulations on your achievement General class}
+            @default {check your Grades...}
+        }
+
     </div>
 </div>
