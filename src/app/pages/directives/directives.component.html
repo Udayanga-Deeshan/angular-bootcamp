@@ -1,0 +1,56 @@
+<div class="row text-center">
+    <div class="col-12 m-3">
+        <b>Example of ngIf & if</b>
+    </div>
+
+
+
+</div>
+
+<div class="row text-center">
+    <div class="col-4">
+       <div>
+            <input type="checkbox" name="" id=""  (click)="onSubmit()"> Terms & conditions
+       </div>
+
+       <!-- <div *ngIf="ischecked">
+        <button class="btn btn-success" >Submit</button>
+       </div> -->
+
+       @if (ischecked) {
+        <button class="btn btn-success" >Submit</button>
+       }
+
+       <div class="col-4">
+        <div class="m-2">
+            <div>
+
+                <!-- <input type="text" value="test" *ngIf="isHidden"> -->
+                 @if(isHidden){
+                    <input type="text" value="test" >
+                 }
+            </div>
+            <button class="btn btn-primary m-2" (click)="onSave()">Show</button>
+            <button class="btn btn-danger"(click)="onHide()">Hide</button>
+        </div>
+       </div>
+
+       <div class="col-4 justify-content-center m-5">
+        <div class="m-2">
+            <div>
+                <input type="text" [(ngModel)]="input1" value="" >
+                <input type="text"[(ngModel)]="input2" value=""  >
+            </div>
+             <p *ngIf="input1 == input2">Password match</p>
+             <div *ngIf="input1 !=input2">
+                Your password is not same
+             </div>
+             
+        </div>
+       </div>
+       
+    </div>
+
+
+    
+</div>
