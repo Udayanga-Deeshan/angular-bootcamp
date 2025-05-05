@@ -5,10 +5,11 @@ import { DataBindingComponent } from "./pages/data-binding/data-binding.componen
 import { DirectivesComponent } from "./pages/directives/directives.component";
 import { NgswitchUsecasesComponent } from "./pages/ngswitch-usecases/ngswitch-usecases.component";
 import { AttributeDirectivesComponent } from "./pages/attribute-directives/attribute-directives.component";
+import { SignalsComponent } from "./pages/signals/signals.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, UserComponent, DataBindingComponent, DirectivesComponent, NgswitchUsecasesComponent, AttributeDirectivesComponent],
+  imports: [RouterOutlet, UserComponent, DataBindingComponent, DirectivesComponent, NgswitchUsecasesComponent, AttributeDirectivesComponent, SignalsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
