@@ -1,0 +1,29 @@
+<div class="row-text-center">
+    <h2>Example of ngClass Directive</h2>
+</div>
+
+
+<div class="row-text-center p-3">
+    <h5 [ngClass]="txtColor">Change me</h5>
+    <button class="btn-btn-success" (click)="onChange('text-info')">Change</button>
+    
+</div>
+
+<div class="row-text-center p-3">
+    <h5 [ngClass]="isGreen ? 'text-success':'text-warning'">Sample Text</h5>
+    <input type="checkbox" [(ngModel)]="isGreen"> change the color
+   
+
+</div>
+
+<div class="row-text-center">
+    <h2>Example of ngStyle Directive</h2>
+</div>
+
+
+<div class="row-text-center p-3">
+    <h5 [ngStyle]="{'color':initialColor,'font-weight':'lighter','font-size':'46px'}">Change my apperance</h5>
+    <button class="btn btn-warning m-3" (click)="updateColor('orange')">Change to yellow</button>
+    <button class="btn btn-primary" (click)="updateColor('blue')">Change to blue </button>
+    
+</div>
